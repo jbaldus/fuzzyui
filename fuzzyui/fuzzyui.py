@@ -100,7 +100,7 @@ class fuzzyui:
         elif inp.code == self.term.KEY_ENTER:
           selected_value = self.fuzzysorted[idx][0]
           break
-        elif re.match(r'^[a-zA-z-_. ]{1}$', inp):
+        elif re.match(r'^[a-zA-z0-9-_. ]{1}$', inp):
           dirty = True
           input_string += inp
           idx = 0
